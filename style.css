@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    cursor: pointer;
+    background-color: #f4f4f4;
+  }
+
+  .selected {
+    background-color: #d6eaff;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .toolbar button {
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .edit-cell {
+    outline: none;
+    border: none;
+    background-color: inherit;
+  }
+
+  .edit-cell:focus {
+    border-bottom: 2px solid blue;
+  }

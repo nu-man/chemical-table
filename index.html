@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Supplies</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <h2>Chemical Supplies</h2>
+      <div class="title">
+        <button onclick="addRow()">+</button>
+        <button onclick="moveRowUp()">↑</button>
+        <button onclick="moveRowDown()">↓</button>
+        <button onclick="deleteRow()">🗑</button>
+        <button onclick="refreshTable()">⟳</button>
+        <button onclick="saveData()">💾</button>
+      </div>
+    </div>
+
+    <table id="chemicalTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">ID</th>
+          <th onclick="sortTable(1)">Chemical Name</th>
+          <th onclick="sortTable(2)">Vendor</th>
+          <th onclick="sortTable(3)">Density</th>
+          <th onclick="sortTable(4)">Viscosity</th>
+          <th onclick="sortTable(5)">Packaging</th>
+          <th onclick="sortTable(6)">Pack Size</th>
+          <th onclick="sortTable(7)">Unit</th>
+          <th onclick="sortTable(8)">Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Data will be dynamically inserted here -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
